@@ -17,14 +17,21 @@ If you change the branch name on line 5 to a sub-branch off the main branch, you
 
 5. Create a new branch in the child repository and make a change to the README.md file. Commit the change and push the branch to the remote repository. You should see the workflow run and update the submodule in the parent repository. To verify this, you can check the status of the workflow in the actions tab of the child repository and also check the submodule in the parent repository to see if it has been updated. 
 
+---
+
 ### Things to Note:
 
 **Using this workflow in a GitHub organisation using a regular GitHub user personal access token should be avoided**
 
-For use with a organization, you will need to create a personal access token for the organization and save it as a repository secret in both the child and parent repositories. The token will need the following permissions:
+For use with an organization, you will need to create a personal access token for the organization and save it as a repository secret in both the child and parent repositories. The token will need the following permissions:
     - repo
     - workflow
 
-OtherwiseI suggest one of the thwo other possible intergrations:
+Otherwise, I suggest one of the two other possible integrations:
 1. Convert this workflow to a GitHub app and use the app to update the submodule. This will allow you to use a GitHub app token instead of a personal access token. [SEE HERE](https://docs.github.com/en/developers/apps/getting-started-with-apps/about-apps) for more details on GitHub apps.
 2. Adapt this workflow to be used by an alternative CI/CD tool such as [Jenkins](https://www.jenkins.io/doc/tutorials/) or [Travis CI](https://docs.travis-ci.com/user/tutorial/).
+
+---
+
+### Useful Information
+To toggle enabling and disabling a workflow once added to a repository using GitHub actions, please see [HERE](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow)
