@@ -2,10 +2,10 @@ name: Send submodule updates to parent repo
 on:
   push:
     branches:
-      - main #NOTE: if you are adding this action to a new repo you may need to change this branch name
+      - main #NOTE: If adding this action to a new repo you may need to change the child repo branch name
 env:
-  PARENT_REPO_NAME: JackEAllen/temp_parent_repo #NOTE: you may need to change the parent repo
-  PARENT_REPO_BRANCH: main #NOTE: you may need to change the parent repo branch
+  PARENT_REPO_NAME: <GITHUB_ORGANISATION_ACCOUNT>/<PARENT_REPOSITORY> #NOTE: You may need to change the parent repo
+  PARENT_REPO_BRANCH: main #NOTE: You may need to change the parent repo branch name
 jobs:
   update:
     runs-on: ubuntu-latest
