@@ -30,7 +30,7 @@ For use with an organization, you will need to create a personal access token fo
 
 Otherwise, I suggest one of the two other possible integrations:
 1. Convert this workflow to a GitHub app and use the app to update the submodule. This will allow you to use a GitHub app token instead of a personal access token. [SEE HERE](https://docs.github.com/en/developers/apps/getting-started-with-apps/about-apps) for more details on GitHub apps.
-2. Adapt this workflow to be used by an alternative CI/CD tool such as [Jenkins](https://www.jenkins.io/doc/tutorials/) or [Travis CI](https://docs.travis-ci.com/user/tutorial/).
+2. Adapt this workflow to be used by an alternative CI/CD tool such as [Jenkins](https://www.jenkins.io/doc/tutorials/) or [Travis CI](https://docs.travis-ci.com/user/tutorial/). This should be relatively straight forward as both tools can be used using yaml similarly to GitHub actions.
 
 ---
 
