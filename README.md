@@ -24,8 +24,9 @@ If you change the branch name on line 5 to a sub-branch off the main branch, you
 **Using this workflow in a GitHub organisation using a regular GitHub user personal access token should be avoided**
 
 For use with an organization, you will need to create a personal access token for the organization and save it as a repository secret in both the child and parent repositories. The token will need the following permissions:
-    - repo
-    - workflow
+
+* repo
+* workflow
 
 Otherwise, I suggest one of the two other possible integrations:
 1. Convert this workflow to a GitHub app and use the app to update the submodule. This will allow you to use a GitHub app token instead of a personal access token. [SEE HERE](https://docs.github.com/en/developers/apps/getting-started-with-apps/about-apps) for more details on GitHub apps.
